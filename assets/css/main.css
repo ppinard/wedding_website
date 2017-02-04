@@ -2116,8 +2116,8 @@
 /* Our story */
 
     #ourstory {
-        background: url("images/overlay.png"), url("../../images/OurStory.jpg");
-        background-size: 8345px 2539px, cover;
+        background: url("images/overlay.png"), url("../../images/ourstory.jpg");
+        background-size: 256px 256px, cover;
         background-attachment: fixed, fixed;
         background-position: top left, center center;
     }
