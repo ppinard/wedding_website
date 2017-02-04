@@ -608,6 +608,7 @@
 
         .box.style2 {
             padding: 3.5em 2.5em 3.5em 2.5em;
+            opacity: 0.9;
         }
 
         @media screen and (max-width: 736px) {
@@ -1699,6 +1700,7 @@
 
             #header nav ul {
                 margin: 0;
+                padding-top: 0.5em;
             }
 
                 #header nav ul li {
@@ -1713,12 +1715,17 @@
                         text-decoration: none;
                         height: 3em;
                         line-height: 3em;
-                        padding: 0 0.5em 0 0.5em;
+                        padding: 0 0.25em 0 0.25em;
                         outline: 0;
                     }
                     
                     #header nav ul li img {
-                        height: 1em;
+                        height: 1.5em;
+                    }
+                    
+                    #header nav ul li img:hover {
+                        opacity: 0.5;
+                        height: 1.4em;
                     }
 
         @media screen and (max-width: 736px) {
@@ -2104,23 +2111,33 @@
         background-repeat: repeat, no-repeat;
     }
 
-/* Details */
+/* Our story */
 
-    #details {
+    #ourstory {
+        background: url("images/overlay.png"), url("../../images/OurStory.jpg");
+        background-size: 8345px 2539px, cover;
+        background-attachment: fixed, fixed;
+        background-position: top left, center center;
+    }
+
+/* When */
+
+    #when {
         background: url("images/overlay.png"), url("../../images/details.jpg");
         background-size: 256px 256px, cover;
         background-attachment: fixed, fixed;
         background-position: top left, center center;
     }
 
-/* Our story */
+/* Where */
 
-    #OurStory {
-        background: url("images/overlay.png"), url("../../images/OurStory.jpg");
-        background-size: 8345px 2539px, cover;
+    #where {
+        background: url("images/overlay.png"), url("../../images/where.jpg");
+        background-size: 256px 256px, cover;
         background-attachment: fixed, fixed;
         background-position: top left, center center;
     }
+
 
 /* RSVP */
 
@@ -2140,45 +2157,4 @@
         background-position: top left, center center;
     }
 
-/* location */
 
-    #location {
-        background: url("images/overlay.png"), url("../../images/location.jpg");
-        background-size: 8345px 2539px, cover;
-        background-attachment: fixed, fixed;
-        background-position: top left, center center;
-    }
-
-/* Contact */
-
-    #contact {
-        overflow: hidden;
-        padding-bottom: 0;
-    }
-
-        #contact .box {
-            -moz-transition: -moz-transform 1s ease;
-            -webkit-transition: -webkit-transform 1s ease;
-            -ms-transition: -ms-transform 1s ease;
-            transition: transform 1s ease;
-            -moz-transform: translateY(0);
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0);
-            position: relative;
-        }
-
-        #contact.inactive .box {
-            -moz-transform: translateY(100%);
-            -webkit-transform: translateY(100%);
-            -ms-transform: translateY(100%);
-            transform: translateY(100%);
-        }
-
-        @media screen and (max-width: 736px) {
-
-            #contact .box {
-                padding-bottom: 2em;
-            }
-
-        }
