@@ -654,14 +654,6 @@
         text-decoration: none;
     }
     
-    @media screen and (max-width: 736px) {
-    
-        .button, button {
-            visibility: hidden;
-        }
-        
-    }
-
         input[type="button"].down,
         input[type="submit"].down,
         input[type="reset"].down,
