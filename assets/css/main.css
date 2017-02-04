@@ -1716,6 +1716,10 @@
                         padding: 0 0.5em 0 0.5em;
                         outline: 0;
                     }
+                    
+                    #header nav ul li img {
+                        height: 1em;
+                    }
 
         @media screen and (max-width: 736px) {
 
