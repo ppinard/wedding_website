@@ -128,24 +128,38 @@
                     <header>
                         <h2>RSVP</h2>
                     </header>
-                    <p>Are you ready to celebrate with us? Let us know!</p>
+                    <p>
+                    Please reply before March 31st, 2017<br>
+                    Réponse souhaitée avant le 31 mars 2017<br>
+                    <span>لطفا شرکت خود را در مراسم تا ۳۱ مارس ۲۰۱۷ به ما اطلاع دهید</span>
+                    </p>
 
-                    <div class="box">
-                         <form name="rsvp" method="post" action="/cgi-bin/rsvp.py">
-                            <div class="field"><input type="text" name="name" placeholder="Name/Prenom" /></div>
-                            <div class="field"><input type="text" name="name" placeholder="Last name/Nom" /></div>
-                            <div class="field"><input type="email" name="email" placeholder="Email" /></div>
-                            <div class="field"><textarea name="message" placeholder="Let us know if you have any allergies" rows="6"></textarea></div>
-                            <ul class="actions">
-                                <li><input type="submit" value="Send" /></li>
-                            </ul>
-                        </form>
-                    </div>
-
-
-
-
-
+                     <form name="rsvp" method="post" action="/cgi-bin/rsvp.py">
+                        <div class="field">
+                        Name / Nom / <span>نام و نام خانوادگی‎</span><br>
+                        <input type="text" name="name">
+                        </div>
+                        <div class="field">
+                        Email / Courriel / <span>ایمیل‎</span><br>
+                        <input type="email" name="email">
+                        </div>
+                        <div class="field">
+                        Will you be attending? / Seriez-vous présent(e)? / <span>آیا شرکت خواهید کرد؟‎</span><br>
+                        <input type="radio" name="attendance" value="yes" checked>Yes / oui / <span>بله‎</span><br>
+                        <input type="radio" name="attendance" value="no">No / non / <span>نه‎</span>
+                        </div>
+                        <div class="field">
+                        Name of your guest / Nom de votre invité(e) / <span>نام و نام خانوادگی مهمان شما</span><br>
+                        <input type="text" name="guest">
+                        </div>
+                        <div class="field">
+                        Food allergies / Allergies alimentaires / <span>آیا به غذایی آلرژی دارید؟</span><br>
+                        <input type="text" name="allergies">
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6Ld9WBQUAAAAAD44CuXWGKKU0DDdaHP5d4c-4eNl"></div>
+                        
+                        <input type="submit" value="Send / Soumettre / ارسال‎" />
+                    </form>
                 </div>
             </section>
 
@@ -178,9 +192,6 @@
                         <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                         <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                         <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-                        <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
                     </ul>
 
                 <!-- Menu -->
@@ -199,6 +210,7 @@
             <script src="assets/js/util.js"></script>
             <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
             <script src="assets/js/main.js"></script>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
 
     </body>
 </html>
