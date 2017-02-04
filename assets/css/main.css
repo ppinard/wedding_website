@@ -1767,7 +1767,7 @@
     }
 
         .main > .content {
-            width: 45em;
+            width: auto;
             max-width: calc(100% - 4em);
             margin: 0 auto;
         }
@@ -1790,8 +1790,13 @@
             -ms-justify-content: center;
             justify-content: center;
             text-align: center;
-            padding: 3em 20em 3em 0;
+            padding: 0em 20em 0em 0;
         }
+        
+            .main.style1 header {
+                background-color: rgba(0, 0, 0, 0.4);
+                border: 1px solid white;
+            }
         
             @media screen and (max-width: 768px) {
             
@@ -1803,6 +1808,7 @@
             .main.style1 h2 {
                 font-size: 4.25em;
                 line-height: 1em;
+                padding: 0.25em;
             }
 
             .main.style1 > .content {
