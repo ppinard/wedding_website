@@ -1905,7 +1905,9 @@
         }
 
             .main.dark a {
-                color: inherit;
+                color: DeepSkyBlue;
+                font-weight: 700;
+                text-decoration: none;
             }
 
             .main.dark .button.style2 {
