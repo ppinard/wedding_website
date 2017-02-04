@@ -1,5 +1,6 @@
 #!/usr/local/bin/python3
 
+import sys
 import cgi
 import smtplib
 import csv
@@ -28,7 +29,7 @@ if not content['success']:
     print()
     print("<title>Sepideh &amp; Philippe</title>")
     print("<h1>Invalid</h1>")
-    return
+    sys.exit(1)
 
 with open('rsvp.csv', 'a') as fp:
     writer = csv.writer(fp)
