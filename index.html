@@ -27,7 +27,6 @@
                         <li><a href="#when"><img src="images/icons/svg/time.svg" alt="When"></a></li>
                         <li><a href="#where"><img src="images/icons/svg/map-location.svg" alt="Where"></a></li>
                         <li><a href="#rsvp"><img src="images/icons/svg/note.svg" alt="RSVP"></a></li>
-                        <li><a href="#gifts"><img src="images/icons/svg/present.svg" alt="Gifts"></a></li>
                     </ul>
                 </nav>
             </header>
@@ -106,8 +105,8 @@
                     
                     <!----------------------------------------French----------------------------------------->
                     <h3>Où</h3>
-                    <p>La cérémonie et le dîner se dérouleront à la résidence familial dans les Cantons de l'est.<br>
-                    19, chemin Meunier Austin, Quebec, Canada, J0B 1B0<br>
+                    <p>La cérémonie et le dîner se dérouleront à la résidence familiale dans les Cantons de l'Est.<br>
+                    19, chemin Meunier Austin, Québec, Canada, J0B 1B0<br>
                     Cliquez <a href="https://www.google.fr/maps/place/Chemin+Meunier,+Austin,+QC+J0B+1B0,+Canada/@45.2177557,-72.2653878,16z/data=!4m5!3m4!1s0x4cb63960070b1c89:0x6d4f3bba6dcd4756!8m2!3d45.2177557!4d-72.2610104">ici</a> pour la carte.
                     </p>
                     
@@ -132,72 +131,46 @@
                     <header>
                         <h2>RSVP</h2>
                     </header>
-                    <p>
-                    Please reply before March 31st, 2017<br>
-                    Réponse souhaitée avant le 31 mars 2017<br>
-                    <span>لطفا شرکت خود را در مراسم تا ۳۱ مارس ۲۰۱۷ به ما اطلاع دهید</span>
-                    </p>
-
-                     <form name="rsvp" method="post" action="/cgi-bin/rsvp.py">
+                    <p>Please reply before March 31st, 2017</p>
+                    <p>Réponse souhaitée avant le 31 mars 2017</p>
+                    <div align="right"><p><span>لطفا شرکت خود را در مراسم تا ۳۱ مارس ۲۰۱۷ به ما اطلاع دهید</span></p></div>
+                    
+                    <form name="rsvp" method="post" action="/cgi-bin/rsvp.py">
                         <div class="field">
-                        Name / Nom / <span>نام و نام خانوادگی‎</span><br>
-                        <input type="text" name="name">
+                            Name / Nom / <span>نام و نام خانوادگی‎</span><br>
+                            <input type="text" name="name">
                         </div>
                         <div class="field">
-                        Email / Courriel / <span>ایمیل‎</span><br>
-                        <input type="email" name="email">
+                            Email / Courriel / <span>ایمیل‎</span><br>
+                            <input type="email" name="email">
                         </div>
                         <div class="field">
-                        Will you be attending? / Seriez-vous présent(e)? / <span>آیا شرکت خواهید کرد؟‎</span><br>
-                        <input type="radio" name="attendance" value="yes" checked>Yes / oui / <span>بله‎</span><br>
-                        <input type="radio" name="attendance" value="no">No / non / <span>نه‎</span>
+                            Will you be attending? / Seriez-vous présent(e)? / <span>آیا شرکت خواهید کرد؟‎</span><br>
+                            <input type="radio" name="attendance" value="yes" checked>Yes / oui / <span>بله‎</span><br>
+                            <input type="radio" name="attendance" value="no">No / non / <span>نه‎</span>
                         </div>
                         <div class="field">
-                        Name of your guest / Nom de votre invité(e) / <span>نام و نام خانوادگی مهمان شما</span><br>
-                        <input type="text" name="guest">
+                            Name of your guest / Nom de votre invité(e) / <span>نام و نام خانوادگی مهمان شما</span><br>
+                            <input type="text" name="guest">
                         </div>
                         <div class="field">
-                        Food allergies / Allergies alimentaires / <span>آیا به غذایی آلرژی دارید؟</span><br>
-                        <input type="text" name="allergies">
+                            Food allergies / Allergies alimentaires / <span>آیا به غذایی آلرژی دارید؟</span><br>
+                            <input type="text" name="allergies">
                         </div>
                         <div class="g-recaptcha" data-sitekey="6Ld9WBQUAAAAAD44CuXWGKKU0DDdaHP5d4c-4eNl"></div>
-                        
+
                         <input type="submit" value="Send / Soumettre / ارسال‎" />
                     </form>
-                </div>
-            </section>
-
-        <!-- Gifts -->
-            <section id="gifts" class="main style2 left dark fullscreen">
-                <div class="content box style2">
-                    <header>
-                        <h2>Gifts</h2>
-                    </header>
-                    <p>We are sending out this invitation,<br/>
-                    In hope you'll join our celebration,<br/>
-                    But if a gift is your intention,<br/>
-                    We'll take this opportunity to mention<br/>
-                    <br/>
-                    We have already got a kettle and toaster,<br/>
-                    crockery, dinner mats, and matching coasters,<br/>
-                    So rather than something we have already got,<br/>
-                    We would appreciate money for our honeymoon pot.<br/>
-                    <br/>
-                    But most importantly we request,<br/>
-                    That you come to our wedding as our guest!</p>
+                    
+                    <p>P.S. In order to accomodate a maximum number of guests, we would appreciate your presence without your young children.</p>
+                    <p>Afin d'accommoder un nombre maximal d'invités, nous apprécions si vous pourriez être présents sans vos enfants en bas âge.</p>
+                    <div align="right"><p><span>به علت محدودیت سالن عروسی، از نورچشمان شما در فرصتی دیگر پذیرایی خواهد شد.</span></p></div>
+                    <p>
                 </div>
             </section>
 
         <!-- Footer -->
             <footer id="footer">
-
-                <!-- Icons -->
-                    <ul class="actions">
-                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    </ul>
-
                 <!-- Menu -->
                     <ul class="menu">
                         <li><a href="https://html5up.net">Design</a></li>
