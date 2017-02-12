@@ -28,12 +28,12 @@ if not content['success']:
     print("Content-Type: text/html")
     print()
     print("<title>Sepideh &amp; Philippe</title>")
-    print("<h1>Invalid</h1>")
+    print("<h1>You are a robot</h1>")
     sys.exit(1)
 
-with open('rsvp.csv', 'a') as fp:
-    writer = csv.writer(fp)
-    writer.writerow([name, email, attendance, guest, allergies])
+#with open('rsvp.csv', 'a') as fp:
+#    writer = csv.writer(fp)
+#    writer.writerow([name, email, attendance, guest, allergies])
 
 from_addr = 'philippe@sepidehphilippe.com'
 to_addrs = ['philippe.pinard@gmail.com', 'sebrahimi1988@gmail.com']
